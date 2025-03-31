@@ -109,7 +109,7 @@ class RRT_algorithm():
         self.route.append((int(node.pos_x),int(node.pos_y)))
         self.backtrack(node.parent)
 
-maze = cv.imread('task_2/maze.png',0)
+maze = cv.imread('maze.png',0)
 _,maze = cv.threshold(maze,250,255,cv.THRESH_BINARY)
 maze = maze[16:338,8:448]
 solution = maze.copy()
