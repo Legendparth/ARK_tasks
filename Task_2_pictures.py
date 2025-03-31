@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 ###########################################################################
 #--------------------------------task PI-----------------------------------#
 
-pi_img = cv.imread('task_2/pi_image.png',0)
+pi_img = cv.imread('pi_image.png',0)
 pi_digits = '''31415926535 8979323846 2643383279 5028841971 6939937510
 5820974944 5923078164 0628620899 8628034825 3421170679
 8214808651 3282306647 0938446095 5058223172 5359408128
@@ -73,7 +73,7 @@ missing_nums = sorted(missing_nums,reverse=True)
 #--------------------------------task PICASSO-----------------------------------#
 
 filter_val = np.array([list(missing_nums[:2]),list(missing_nums[2:])])
-picasso_distorted_img = cv.imread('task_2/artwork_picasso.png',0)
+picasso_distorted_img = cv.imread('artwork_picasso.png',0)
 inv_filter_val = np.linalg.inv(filter_val)
 filtered_img = np.zeros(picasso_distorted_img.shape[:2],dtype='uint8')
 
@@ -95,7 +95,7 @@ plt.axis('off')
 ###########################################################################
 #--------------------------------task RICK_ASHLEY-----------------------------------#
 
-collage_ricks = cv.imread('task_2/collage.png',0)
+collage_ricks = cv.imread('collage.png',0)
 required_rick_pic = filtered_img
 num = collage_ricks.shape[0]
 zero_counts =[]
