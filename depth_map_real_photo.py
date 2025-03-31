@@ -9,8 +9,8 @@ green_arr = []
 red_arr =[]
 disp_list = []
 
-img_L = cv.imread('cam_photo/left_1_resize.jpg')
-img_R = cv.imread('cam_photo/right_1_resize.jpg')
+img_L = cv.imread('left_1_resize.jpg')
+img_R = cv.imread('right_1_resize.jpg')
 blank = np.zeros(img_L.shape[:2], dtype='uint8')
 
 sift = cv.SIFT_create()
