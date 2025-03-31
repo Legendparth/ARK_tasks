@@ -10,8 +10,8 @@ red_arr =[]
 disp_list = []
 
 
-img_L = cv.imread('depth_map_photo/left.png')
-img_R = cv.imread('depth_map_photo/right.png')
+img_L = cv.imread('left.png')
+img_R = cv.imread('right.png')
 
 blank = np.zeros(img_L.shape[:2], dtype='uint8')
 
